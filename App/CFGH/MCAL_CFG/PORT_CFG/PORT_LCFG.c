@@ -34,9 +34,9 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 {
 		/* LED Pin Output */
 			// LED Red 
-	/*{	PORTC_PIN0	,	PIN_OUTPUT	},*/
+	{	PORTC_PIN0	,	PIN_OUTPUT	},
 			// LED Green
-	/*{	PORTC_PIN1	,	PIN_OUTPUT	},*/
+	{	PORTC_PIN1	,	PIN_OUTPUT	},
 
 			/* LED blue */
 	/*{	PORTC_PIN2	,	PIN_OUTPUT	}, */
@@ -85,7 +85,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	{	PORTD_PIN2 ,	PIN_INPUT	},
 	{	PORTD_PIN3 ,	PIN_INPUT	},
 	{	PORTD_PIN4 ,	PIN_INPUT	},
-	{	PORTD_PIN5 ,	PIN_INPUT	},
+	/*{	PORTD_PIN5 ,	PIN_INPUT	},*/
 		
 	/********** PWm pin *************/
 		/**** Timer0 ***/
@@ -98,7 +98,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	/*{	PORTC_PIN4 , PIN_OUTPUT		},*/
 		
 		/******** Servo pin *******/
-	/*{	PORTD_PIN5 , PIN_OUTPUT		},*/
+	{	PORTD_PIN5 , PIN_OUTPUT		},
 	
 	/********* L298N**********/
 		/*** Motor 1 ***/
