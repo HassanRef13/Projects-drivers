@@ -33,18 +33,17 @@
 const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 {
 		/* LED Pin Output */
-			// LED Red 
+			/* LED Red */
 	/*{	PORTC_PIN0	,	PIN_OUTPUT	},*/
-			// LED Green
+			/* LED Green*/
 	/*{	PORTC_PIN1	,	PIN_OUTPUT	},*/
-
 			/* LED blue */
-	/*{	PORTC_PIN2	,	PIN_OUTPUT	}, */
+	/*{	PORTC_PIN2	,	PIN_OUTPUT	},*/ 
 		
 		//Push Button pin input 	
 	/*{	PORTD_PIN2	,	PIN_INPUT	},
-	{	PORTD_PIN3	,	PIN_INPUT	},
-	{	PORTD_PIN4	,	PIN_INPUT	},
+	{	PORTD_PIN3	,	PIN_INPUT	},*/
+	/*{	PORTD_PIN4	,	PIN_INPUT	},
 	{	PORTD_PIN5	,	PIN_INPUT	},
 	{	PORTB_PIN4	,	PIN_INPUT	},*/
 
@@ -58,12 +57,12 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	{	PORTC_PIN7  ,	PIN_OUTPUT	},*/
 		
 // 		Port A initialization for LCD 
-	{	PORTA_PIN1 ,	PIN_OUTPUT	},
-	{	PORTA_PIN2 ,	PIN_OUTPUT	},
-	{	PORTA_PIN3 ,	PIN_OUTPUT	},
-	{	PORTA_PIN4 ,	PIN_OUTPUT	},
-	{	PORTA_PIN5 ,	PIN_OUTPUT	},
-	{	PORTA_PIN6 ,	PIN_OUTPUT	},
+ 	{	PORTA_PIN1 ,	PIN_OUTPUT	},
+ 	{	PORTA_PIN2 ,	PIN_OUTPUT	},
+ 	{	PORTA_PIN3 ,	PIN_OUTPUT	},
+ 	{	PORTA_PIN4 ,	PIN_OUTPUT	},
+ 	{	PORTA_PIN5 ,	PIN_OUTPUT	},
+ 	{	PORTA_PIN6 ,	PIN_OUTPUT	},
 		
 		
 	// 		Port A initialization for 7seg
@@ -77,7 +76,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	
 
 			/*	KeyPad	*/
-	{	PORTB_PIN4 ,	PIN_OUTPUT	},
+	/*{	PORTB_PIN4 ,	PIN_OUTPUT	},
 	{	PORTB_PIN5 ,	PIN_OUTPUT	},
 	{	PORTB_PIN6 ,	PIN_OUTPUT	},
 	{	PORTB_PIN7 ,	PIN_OUTPUT	},
@@ -85,11 +84,11 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	{	PORTD_PIN2 ,	PIN_INPUT	},
 	{	PORTD_PIN3 ,	PIN_INPUT	},
 	{	PORTD_PIN4 ,	PIN_INPUT	},
-	{	PORTD_PIN5 ,	PIN_INPUT	},
+	{	PORTD_PIN5 ,	PIN_INPUT	},*/
 		
 	/********** PWm pin *************/
 		/**** Timer0 ***/
-	/*{	PORTB_PIN3 , PIN_OUTPUT		},*/
+	{	PORTB_PIN3 , PIN_OUTPUT		},
 		/*** Timer 2***/
 	/*{	PORTD_PIN7 , PIN_OUTPUT		},*/
 		
@@ -102,13 +101,16 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	
 	/********* L298N**********/
 		/*** Motor 1 ***/
-	/*{	PORTC_PIN4  ,	PIN_OUTPUT	},
+	{	PORTC_PIN4  ,	PIN_OUTPUT	},
 	{	PORTC_PIN5  ,	PIN_OUTPUT	},
-*/
 		/**	 Motor 2 ***/
-	/*{	PORTC_PIN6  ,	PIN_OUTPUT	},
-	{	PORTC_PIN7  ,	PIN_OUTPUT	},*/
+ 	{	PORTC_PIN6  ,	PIN_OUTPUT	},
+ 	{	PORTC_PIN7  ,	PIN_OUTPUT	},
 		
+		/******* Button ******/
+ 	/*{	PORTD_PIN2  ,	PIN_INPUT	},
+ 	{	PORTD_PIN3  ,	PIN_INPUT	},*/
+
 		
 	/************* LM35 Temp sensor **********/
 	/*{	PORTA_PIN7  ,	PIN_INPUT	},*/
@@ -123,16 +125,16 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 
 		/******* UART *********/
 
-	/*{	PORTD_PIN0  ,	PIN_INPUT	},
-	{	PORTD_PIN1  ,	PIN_OUTPUT	},
-*/
+// 	{	PORTD_PIN0  ,	PIN_INPUT	},
+// 	{	PORTD_PIN1  ,	PIN_OUTPUT	},
 		
 		/******** SPI **********/
 		/**** Master ***/
-	/*{	PORTB_PIN4, PIN_OUTPUT		}, // CS
+	{	PORTB_PIN0, PIN_OUTPUT		}, // Slave2 Cs2
+	{	PORTB_PIN4, PIN_OUTPUT		}, // slave1 CS1
 	{	PORTB_PIN5, PIN_OUTPUT		}, //MOSI
 	{	PORTB_PIN6, PIN_INPUT		}, //MISO
-	{	PORTB_PIN7, PIN_OUTPUT		}, //CLK*/
+	{	PORTB_PIN7, PIN_OUTPUT		}, //CLK
 			/*** Slave ****/
 	/*{	PORTB_PIN4, PIN_INPUT		}, // CS
 	{	PORTB_PIN5, PIN_INPUT		}, //MOSI
