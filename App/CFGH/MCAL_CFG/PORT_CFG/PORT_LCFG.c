@@ -77,7 +77,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	
 
 			/*	KeyPad	*/
-	{	PORTB_PIN4 ,	PIN_OUTPUT	},
+	/*{	PORTB_PIN4 ,	PIN_OUTPUT	},
 	{	PORTB_PIN5 ,	PIN_OUTPUT	},
 	{	PORTB_PIN6 ,	PIN_OUTPUT	},
 	{	PORTB_PIN7 ,	PIN_OUTPUT	},
@@ -85,7 +85,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	{	PORTD_PIN2 ,	PIN_INPUT	},
 	{	PORTD_PIN3 ,	PIN_INPUT	},
 	{	PORTD_PIN4 ,	PIN_INPUT	},
-	{	PORTD_PIN5 ,	PIN_INPUT	},
+	{	PORTD_PIN5 ,	PIN_INPUT	},*/
 		
 	/********** PWm pin *************/
 		/**** Timer0 ***/
@@ -102,16 +102,16 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	
 	/********* L298N**********/
 		/*** Motor 1 ***/
-	/*{	PORTC_PIN4  ,	PIN_OUTPUT	},
+	{	PORTC_PIN4  ,	PIN_OUTPUT	},
 	{	PORTC_PIN5  ,	PIN_OUTPUT	},
-*/
+
 		/**	 Motor 2 ***/
-	/*{	PORTC_PIN6  ,	PIN_OUTPUT	},
-	{	PORTC_PIN7  ,	PIN_OUTPUT	},*/
+	{	PORTC_PIN6  ,	PIN_OUTPUT	},
+	{	PORTC_PIN7  ,	PIN_OUTPUT	},
 		
 		
 	/************* LM35 Temp sensor **********/
-	/*{	PORTA_PIN7  ,	PIN_INPUT	},*/
+	{	PORTA_PIN7  ,	PIN_INPUT	},
 
 		
 	/***********ICU ULtrasonic*******/
