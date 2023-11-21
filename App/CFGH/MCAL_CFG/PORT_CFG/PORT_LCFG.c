@@ -34,9 +34,9 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 {
 		/* LED Pin Output */
 			// LED Red 
-	{	PORTC_PIN0	,	PIN_OUTPUT	},
+	/*{	PORTC_PIN0	,	PIN_OUTPUT	},*/
 			// LED Green
-	{	PORTC_PIN1	,	PIN_OUTPUT	},
+	/*{	PORTC_PIN1	,	PIN_OUTPUT	},*/
 
 			/* LED blue */
 	/*{	PORTC_PIN2	,	PIN_OUTPUT	}, */
@@ -77,7 +77,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	
 
 			/*	KeyPad	*/
-	{	PORTB_PIN4 ,	PIN_OUTPUT	},
+	/*{	PORTB_PIN4 ,	PIN_OUTPUT	},
 	{	PORTB_PIN5 ,	PIN_OUTPUT	},
 	{	PORTB_PIN6 ,	PIN_OUTPUT	},
 	{	PORTB_PIN7 ,	PIN_OUTPUT	},
@@ -85,7 +85,7 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	{	PORTD_PIN2 ,	PIN_INPUT	},
 	{	PORTD_PIN3 ,	PIN_INPUT	},
 	{	PORTD_PIN4 ,	PIN_INPUT	},
-	/*{	PORTD_PIN5 ,	PIN_INPUT	},*/
+	{	PORTD_PIN5 ,	PIN_INPUT	},*/
 		
 	/********** PWm pin *************/
 		/**** Timer0 ***/
@@ -98,13 +98,13 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 	/*{	PORTC_PIN4 , PIN_OUTPUT		},*/
 		
 		/******** Servo pin *******/
-	{	PORTD_PIN5 , PIN_OUTPUT		},
+	/*{	PORTD_PIN5 , PIN_OUTPUT		},*/
 	
 	/********* L298N**********/
 		/*** Motor 1 ***/
 	/*{	PORTC_PIN4  ,	PIN_OUTPUT	},
-	{	PORTC_PIN5  ,	PIN_OUTPUT	},
-*/
+	{	PORTC_PIN5  ,	PIN_OUTPUT	},*/
+
 		/**	 Motor 2 ***/
 	/*{	PORTC_PIN6  ,	PIN_OUTPUT	},
 	{	PORTC_PIN7  ,	PIN_OUTPUT	},*/
@@ -123,9 +123,8 @@ const PIN_PARAMETERS PORT_Initialization[DEFINED_PINS] =
 
 		/******* UART *********/
 
-	/*{	PORTD_PIN0  ,	PIN_INPUT	},
+	{	PORTD_PIN0  ,	PIN_INPUT	},
 	{	PORTD_PIN1  ,	PIN_OUTPUT	},
-*/
 		
 		/******** SPI **********/
 		/**** Master ***/
